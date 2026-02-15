@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini fil d'actualité Firebase</title>
+</head>
+<body>
+  <h1>Mini fil d'actualité Firebase</h1>
+
+  <!-- Auth (Hichem) -->
+  <section id="auth-section">
+    <h2>Inscription</h2>
+    <form id="signup-form">
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="password" id="signup-password" placeholder="Mot de passe" required>
+      <button type="submit">Créer un compte</button>
+    </form>
+
+    <h2>Connexion</h2>
+    <form id="login-form">
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Mot de passe" required>
+      <button type="submit">Se connecter</button>
+    </form>
+
+    <button id="logout-btn" style="display:none;">Se déconnecter</button>
+    <p id="user-info">Non connecté</p>
+  </section>
+
+  <!--  partie : Publication_Nessrine -->
+  <section id="post-section" style="display:none;">
+    <h2>Publier un message</h2>
+    <form id="post-form">
+      <input type="text" id="post-content" placeholder="Votre message..." required>
+      <button type="submit">Publier</button>
+    </form>
+  </section>
+
+  <!-- partie : Affichage _azeddine-->
+  <section id="messages-section">
+    <h2>Messages</h2>
+    <div id="messages-list"></div>
+  </section>
+
+  <!-- Lien vers JS -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
